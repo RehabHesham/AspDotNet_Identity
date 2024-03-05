@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@model List<IdentityRole>
+<h1>Roles</h1>
+<a class="btn btn-danger" asp-action="Add">Add Role</a>
+<hr />
+@foreach(var role in Model)
+{
+    <p>@role</p>
+}
